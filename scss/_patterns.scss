@@ -1,0 +1,29 @@
+h1 {
+    font-size: 3.906rem;
+    line-height: 3.6rem;
+    color: $ascent;
+    margin-bottom: 2rem;
+     @media(max-width: 580px) {
+        font-size: 2.4rem;
+        line-height: 2.4rem; 
+     }                   
+                
+}
+h2 {
+    font-size: 3.2rem;
+    color: $ascent;
+
+    @media (max-width: 580px) {
+        font-size: 1.6rem;
+    }
+}
+p {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    color: $text;
+
+    @media(max-width: 580px) {
+        font-size: 1.4rem;
+        line-height: 1.8rem; 
+     }  
+}

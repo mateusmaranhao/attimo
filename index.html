@@ -1,11 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <meta name="description" content="O Grupo Attimo é sua parceira estratégica para acelerar o crescimento empresarial, oferecendo análises de mercado, treinamentos, suporte governamental, eventos corporativos e soluções personalizadas para impulsionar o sucesso.">
+    <meta name="author" content="Dyego Freitas, Grupo Attimo">
+    <meta name="keywords" content="Consultoria empresarial, Desenvolvimento estratégico, Análise de mercado, Treinamento corporativo, Contratos governamentais, Eventos corporativos, Estratégias de crescimento, Suporte estratégico, Oportunidades de negócios, Resultados mensuráveis, Soluções personalizadas, Competências empresariais, Networking empresarial, Sucesso nos negócios, Parcerias estratégicas">
+    <meta name="robots" content="index,nofollow">
+
     <title>Attimo.</title>
+    <link rel="icon" type="image/png" href="./fav.png">
+
+
+    <link rel="stylesheet" href="./scss/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container" data-aos="fade-down">
+            <a href="./" class="logo" >
+                <img src="./img/logo-attimo.svg" alt="Imagem do Logo da Attimo">
+            </a>
+        </div>
+    </header>
+
+    <section class="s-hero">
+        <div class="container">
+           <div class="left-content" data-aos="fade-right">
+            <h1>Impulsionamos o crescimento e o sucesso da sua empresa com soluções personalizadas</h1>
+            <p>O Grupo Attimo acelera o sucesso empresarial com soluções personalizadas, incluindo análises de mercado, treinamentos, suporte governamental e eventos corporativos memoráveis.</p>
+           </div>
+
+           <div class="right-content grid" data-aos="fade-left">   
+                <div class="g-solucoes">
+                    <button class="modal-btn js-open-modal-solucoes"><img src="./img/home-solucoes.png" alt="Imagem ilustrando o serviço de soluções empresariais"></button>
+                </div>
+                <div class="g-documentacao">
+                    <button class="modal-btn js-open-modal-doc">
+                        <img src="./img/home-documentacao.png" alt="Imagem ilustrando o serviço de documentação">
+                    </button>
+                </div>
+                <div class="g-gerenciamento"> 
+                    <button class="modal-btn js-open-modal-gerenciamento">
+                        <img src="./img/home-gerenciamento.png" alt="Imagem iluistrando o serviço de gerenciamento">
+                    </button>
+                </div>
+                <div class="g-administrativo">
+                    <button class="modal-btn js-open-modal-administrativo">
+                        <img src="./img/home-administrativo.png" alt="Imagem ilustrando o serviço administrativo">
+                    </button>
+                </div>
+                <div class="g-eventos">
+                    <button class="modal-btn js-open-modal-eventos">
+                        <img src="./img/home-eventos.png" alt="Imagem ilustrando o serviço de eventos">
+                    </button>
+                </div>
+                
+           </div>
+        </div>
+
+        <div class="modal" id="js-solucao">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-solucoes">
+                    <img src="./img/close-icon.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-solucoes.svg" alt="Imagem da logo do serviço de Soluções da Attimo" class="logo">
+
+                <p>Somos especializados em fornecer cursos, formações, treinamentos e palestras personalizados para empresas visando o desenvolvimento de líderes e colaboradores excepcionais e a promoção do aprendizado contínuo. Nossos programas abrangem uma ampla gama de tópicos, desde habilidades técnicas até competências interpessoais, gestão de equipes, liderança e inovação, acreditando que o investimento no desenvolvimento dos colaboradores é crucial para o crescimento sustentável das empresas. Além disso, enfatizamos a importância do networking, criando um ambiente de interação e compartilhamento de conhecimento para facilitar a conexão entre empresas e a formação de parcerias estratégicas.</p>
+                <p>Nossa equipe é composta por especialistas em diversas áreas, garantindo ensinamentos atualizados com as últimas tendências do mercado, proporcionando uma experiência de aprendizado dinâmica, prática e inspiradora. Se busca programas que promovam a excelência dos líderes e colaboradores, bem como oportunidades de networking e colaboração empresarial, estamos à disposição para colaborar e acelerar o crescimento de sua empresa. Entre em contato conosco para saber mais sobre nossos programas e como podemos ajudar a sua empresa a alcançar o sucesso desejado. Aguardamos com entusiasmo a oportunidade de trabalhar juntos!</p>                
+                
+                <h2 class="solucoes">Serviços Oferecidos</h2>
+                <ul>
+                    <li>
+                        <img src="./img/check-solucoes.svg" alt="ícone para acompanhar a lista">
+                        Formações empresariais
+                    </li>
+                    <li>
+                        <img src="./img/check-solucoes.svg" alt="ícone para acompanhar a lista">
+                        Desenvolvimento de líderes
+                    </li>
+                    <li>
+                        <img src="./img/check-solucoes.svg" alt="ícone para acompanhar a lista">
+                        Desenvolvimento de colaboradores
+                    </li>
+                    <li>
+                        <img src="./img/check-solucoes.svg" alt="ícone para acompanhar a lista">
+                        Ensino de alta qualidade
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="js-administrativo">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-administrativo">
+                    <img src="./img/close-icon.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-administrativo.svg" alt="Imagem da logo do serviço Administrativos da Attimo" class="logo">
+
+               <p>A Attimo Administrativo é uma consultoria que auxilia empresas na obtenção de certidões e documentos técnicos para licitações públicas, simplificando a burocracia e garantindo conformidade legal. Seus serviços abrangem regularização fiscal, trabalhista e previdenciária, bem como propostas para licitações. Além disso, oferecem assistência na criação de contratos e relatórios técnicos, adaptando soluções às necessidades individuais de cada cliente.</p>
+               <p>A Attimo Administrativo é uma parceira confiável para empresas que buscam crescimento e sucesso, fornecendo soluções personalizadas e eficazes, simplificando processos burocráticos e assegurando a conformidade legal em obtenção de certidões, licitações e outros aspectos organizacionais.</p>
+
+                <h2 class="administrativo">Serviços Oferecidos</h2>
+
+                <ul>
+                    <li>
+                        <img src="./img/check-adm.svg" alt="ícone para acompanhar a lista">
+                        Elaboração de documentos técnicos
+                    </li>
+                    <li>
+                        <img src="./img/check-adm.svg" alt="ícone para acompanhar a lista">
+                        Organização de arquivos e inventários
+                    </li>
+                    <li>
+                        <img src="./img/check-adm.svg" alt="ícone para acompanhar a lista">
+                        Obtenção de certidões
+                    </li>
+                    <li>
+                        <img src="./img/check-adm.svg" alt="ícone para acompanhar a lista">
+                        Análise de concorrência
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="js-doc">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-doc">
+                    <img src="./img/close-icon.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-documentacoes.svg" alt="Imagem da logo do serviço de Documentações da Attimo" class="logo">
+
+                <p>A empresa se especializa em auxiliar outras empresas em processos de contratação com o setor público, oferecendo uma gama de serviços que simplificam desde a preparação de documentos até o acompanhamento detalhado dos contratos. Sua equipe experiente adapta os produtos e serviços dos clientes às necessidades específicas dos órgãos públicos, fortalecendo relacionamentos e promovendo transparência e ética. Além disso, eles se destacam pelo rigoroso acompanhamento da execução dos contratos, minimizando riscos e prejuízos, proporcionando às empresas uma participação competitiva e eficaz no mercado público, simplificando processos burocráticos e tornando-os acessíveis.</p>
+                <p>Em resumo, a empresa é um parceiro estratégico para empresas que desejam se envolver no mercado público, oferecendo serviços especializados que maximizam as chances de sucesso, promovendo relacionamentos sólidos com órgãos públicos e garantindo uma execução eficiente dos contratos, tudo com o objetivo de simplificar o processo de contratação pública e torná-lo mais acessível e próspero para todos os envolvidos.</p>
+
+                <h2 class="documentacoes">Serviços Oferecidos</h2>
+
+                <ul>
+                    <li>
+                        <img src="./img/check-doc.svg" alt="ícone para acompanhar a lista">
+                        Elaboração de Documentação
+                    </li>
+                    <li>
+                        <img src="./img/check-doc.svg" alt="ícone para acompanhar a lista">
+                        Adequação às legislações vigentes
+                    </li>
+                    <li>
+                        <img src="./img/check-doc.svg" alt="ícone para acompanhar a lista">
+                        Acompanhamento da execução de contratos
+                    </li>
+                    <li>
+                        <img src="./img/check-doc.svg" alt="ícone para acompanhar a lista">
+                        Suporte em licitação pública
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="js-gerenciamento">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-gerenciamento">
+                    <img src="./img/close-icon.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-gerenciamento.svg" alt="Imagem da logo do serviço de Gerenciamento da Attimo" class="logo">
+
+                <p>Nossa principal missão é impulsionar o sucesso das empresas por meio de soluções estratégicas e práticas, entregues por uma equipe experiente em gestão de negócios e familiarizada com as melhores práticas do mercado. Utilizamos ferramentas avançadas e metodologias comprovadas para identificar oportunidades, entender as demandas dos clientes e melhorar processos internos. Além disso, personalizamos estratégias de acordo com as necessidades individuais de cada empresa, visando otimizar operações, aumentar a produtividade e reduzir custos para enfrentar os desafios do mercado atual.</p>
+                <p>Nossa abordagem é orientada para resultados sustentáveis de longo prazo, baseada em estreita colaboração com nossos clientes para entender seus objetivos e desafios. Se você busca acelerar o sucesso de sua empresa, contar com especialistas em gestão empresarial, análise de mercado e otimização de processos é crucial. Entre em contato conosco para descobrir como nossa experiência pode contribuir para o crescimento e sucesso de sua empresa, estamos prontos para ajudá-lo a atingir seus objetivos empresariais.</p>
+
+                <h2 class="gerenciamento">Serviços Oferecidos</h2>
+
+                <ul>
+                    <li>
+                        <img src="./img/check-gerenciamento.svg" alt="ícone para acompanhar a lista">
+                        Consultoria em gestão de negócios
+                    </li>
+                    <li>
+                        <img src="./img/check-gerenciamento.svg" alt="ícone para acompanhar a lista">
+                        Análise de mercado
+                    </li>
+                    <li>
+                        <img src="./img/check-gerenciamento.svg" alt="ícone para acompanhar a lista">
+                        Desenvolvimento de estratégias empresariais
+                    </li>
+                    <li>
+                        <img src="./img/check-gerenciamento.svg" alt="ícone para acompanhar a lista">
+                        Aplicação de expertise em gestão empresarial
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="js-eventos">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-eventos">
+                    <img src="./img/close-icon.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-eventos.svg" alt="Imagem da logo do serviço de Gerenciamento da Attimo" class="logo">
+
+                <p>Essa empresa é especializada na organização de eventos empresariais de alta qualidade, oferecendo uma ampla gama de atividades, desde congressos e palestras até feiras e treinamentos. Seu foco principal é proporcionar experiências únicas para empresas de diversos setores, promovendo o aprendizado, o desenvolvimento dos colaboradores e o networking entre empresários de diferentes áreas. Eles se comprometem a oferecer eventos inspiradores, com conteúdo relevante ministrado por especialistas, cuidadosamente planejados para atender às necessidades dos participantes e gerar benefícios tangíveis para o crescimento das empresas.</p>
+                <p>Em resumo, essa empresa busca promover a formação dos colaboradores e fortalecer relacionamentos estratégicos entre empresários de diferentes segmentos por meio da realização de eventos empresariais de alto nível. Seu compromisso é oferecer experiências enriquecedoras que proporcionem aprendizado, insights e conexões relevantes, contribuindo efetivamente para o sucesso e crescimento das empresas que participam de seus eventos.</p>
+
+                <h2 class="eventos">Serviços Oferecidos</h2>
+
+                <ul>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Realização de congressos, palestras, simpósios, feiras e workshops
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Promoção de aprendizado e networking
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Contribuição efetiva para o crescimento da empressa
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Programação diversificada e de qualidade
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="s-contact">
+        <div class="container">
+            <div class="info">
+                <h2 data-aos="fade-right">Contato</h2>
+                <p data-aos="fade-left">Pronto para impulsionar o sucesso de sua empresa? Entre em contato conosco agora mesmo</p>
+            </div>
+
+            <form action="https://formsubmit.co/mateusmaranhao0210@gmail.com" method="POST">
+                <div class="field" data-aos="fade-down">
+                    <label for="name">Seu nome <span class="accent">*</span></label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="field" data-aos="fade-down">
+                    <label for="company">Sua empresa <span class="accent">*</span></label>
+                    <input type="text" name="company" placeholder="Digite o nome da sua empresa" required>
+                </div>
+
+                <div class="field" data-aos="fade-down">
+                    <label for="email">Seu e-mail <span class="accent">*</span></label>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="field" data-aos="fade-down">
+                    <label for="message">Serviço desejado<span class="accent">*</span></label>
+                    <textarea name="message" placeholder="Nos conte qual serviço disponibilizado pela Attimo que sua empresa precisa" required></textarea>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false">
+                
+                <button type="submit" class="form-btn" data-aos="fade-up">Enviar</button>
+           </form>
+        </div>    
+    </section>
+
+    <footer>
+        <p class="copy">Copyright © 2022. ATTIMO. Todos direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

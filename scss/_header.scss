@@ -1,0 +1,13 @@
+header {
+    margin: 2.5rem 0;
+
+    .container {
+        a {
+            display: inline-block;
+        }
+        @media(max-width: 580px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

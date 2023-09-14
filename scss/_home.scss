@@ -1,0 +1,294 @@
+.s-hero {
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-content {
+            width: 60rem;
+        }
+        .right-content {
+            width: 73rem;
+            display: grid;
+            gap: 2.2rem;
+            
+            &.grid {
+                grid-template-areas: "first first" "second third" "fourth fifth";
+
+                div {
+                    filter: saturate(0.6);
+
+                    &:hover {
+                        filter: saturate(1);
+                        transition: all .3s;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+                .g-solucoes{
+                    grid-area: first;
+                }
+                .g-documentacao {
+                    grid-area: second;
+                }
+                .g-gerenciamento {
+                    grid-area: third;
+                }
+                .g-administrativo {
+                    grid-area: fourth;
+                }
+                .g-eventos {
+                    grid-area: fifth;
+                }
+            }
+        }
+
+        @media(max-width: 991px) {
+            flex-direction: column;
+
+            .left-content {
+                text-align: center;
+                p {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        @media(max-width: 580px) {
+            .left-content {
+                width: 95%;
+            }
+            .right-content {
+                width: 95%;
+            }
+        }
+        @media(max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    .modal {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+
+        .box {
+            position: relative;
+            z-index: 2;
+            width: 92rem;
+            padding: 4rem 9.4rem;
+            background-color: $primary;
+
+            .close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-weight: 700;
+                color: $text;
+                padding: 1.5rem 2.5rem;
+            }
+
+            .logo {
+                margin: 0 auto 3rem;
+            }
+
+            p {
+              &:not(:last-child) {
+                margin-bottom: 2.2rem;
+              }  
+            }
+            h2 {
+                font-size: 1.8rem;
+                margin-top: 4rem;
+                &.solucoes {
+                    color: $solucoes;
+                }
+                &.administrativo {
+                    color: $administrativo;
+                }
+                &.documentacoes {
+                    color: $documentacao;
+                }
+                &.gerenciamento {
+                    color: $gerenciamento;
+                }
+            }
+
+            ul {
+                margin-top: 2rem;
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: $text;
+                    font-size: 1.6rem;
+                    &:not(:first-child) {
+                        margin-top: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 580px) {
+            
+            .box {
+                width: 100%;
+                overflow: auto;
+                padding-top: 2rem;
+
+                .logo {
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    &:not(:last-child) {
+                        margin-bottom: 1.8rem;
+                      } 
+                }
+
+                h2 {
+                    margin-top: 0;
+                }
+
+                ul {
+                    li {
+                        font-size: 1.4rem;
+                        img {
+                            height: 1.4rem;
+                            width: auto;
+                        }
+                        &:not(:first-child) {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
+
+.s-contact {
+    margin-top: 4rem;
+    .container {
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        form {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .field {
+                width: 43.3rem;
+                margin-bottom: 2rem;
+                label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                    color: $text;
+
+                    .accent {
+                        color:  $ascent;
+                    }
+                }
+                input {
+                    width: 100%;
+                    max-width: 43.3rem;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $input;
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    padding-bottom: 0.5rem;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: 0;
+                    width: 100%;
+                    max-width: 43.3rem;
+                    border-bottom: 1px solid $input;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            .form-btn {
+                width: 100%;
+                max-width: 43.3rem;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                text-transform: uppercase;
+                background-color: $ascent;
+                color: $primary;
+                border: none;
+                outline: none;
+                padding: 1rem 0;       
+            }
+        }
+
+        @media(max-width: 991px) {
+            .info {
+                p {
+                    width: 60%;
+                }
+            }
+        }
+        @media(max-width: 580px) {
+            .info {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+            form {
+                .field {
+                    label {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
