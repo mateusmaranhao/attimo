@@ -303,7 +303,7 @@ header .container a {
   color: #BCCF00;
 }
 .s-contact .container form .field input {
-  width: 100%;
+  width: 90%;
   max-width: 43.3rem;
   background-color: transparent;
   border: none;
@@ -349,6 +349,9 @@ header .container a {
   }
   .s-contact .container .info p {
     font-size: 1.4rem;
+  }
+  .s-contact .container form {
+    display: inline-block;
   }
   .s-contact .container form .field label {
     font-size: 1.6rem;

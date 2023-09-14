@@ -230,7 +230,7 @@
                     }
                 }
                 input {
-                    width: 100%;
+                    width: 90%;
                     max-width: 43.3rem;
                     background-color: transparent;
                     border: none;
@@ -284,6 +284,7 @@
                 }
             }
             form {
+                display: inline-block;
                 .field {
                     label {
                         font-size: 1.6rem;
