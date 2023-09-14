@@ -266,11 +266,15 @@
         }
 
         @media(max-width: 991px) {
-            width: 95%;
+            width: 100%;
             .info {
+                max-width: 95%;
                 p {
                     width: 60%;
                 }
+            }
+            form {
+                width: 95%;
             }
         }
         @media(max-width: 580px) {
@@ -288,9 +292,6 @@
                 .field {
                     label {
                         font-size: 1.6rem;
-                    }
-                    textarea {
-                        width: 100%;
                     }
                 }
             }

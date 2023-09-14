@@ -338,10 +338,16 @@ header .container a {
 }
 @media (max-width: 991px) {
   .s-contact .container {
-    width: 95%;
+    width: 100%;
+  }
+  .s-contact .container .info {
+    max-width: 95%;
   }
   .s-contact .container .info p {
     width: 60%;
+  }
+  .s-contact .container form {
+    width: 95%;
   }
 }
 @media (max-width: 580px) {
@@ -356,9 +362,6 @@ header .container a {
   }
   .s-contact .container form .field label {
     font-size: 1.6rem;
-  }
-  .s-contact .container form .field textarea {
-    width: 100%;
   }
 }
 
