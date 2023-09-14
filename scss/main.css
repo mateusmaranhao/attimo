@@ -349,6 +349,9 @@ header .container a {
   .s-contact .container form {
     width: 95%;
   }
+  .s-contact .container form textarea {
+    width: 100%;
+  }
 }
 @media (max-width: 580px) {
   .s-contact .container .info h2 {
