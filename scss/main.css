@@ -42,6 +42,10 @@ a {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 3.906rem;
   line-height: 3.6rem;
@@ -332,6 +336,9 @@ header .container a {
   padding: 1rem 0;
 }
 @media (max-width: 991px) {
+  .s-contact .container {
+    width: 95%;
+  }
   .s-contact .container .info p {
     width: 60%;
   }
@@ -349,6 +356,7 @@ header .container a {
 }
 
 footer {
+  width: 100%;
   background: #454754;
   padding: 4rem 0;
   margin-top: 4rem;
