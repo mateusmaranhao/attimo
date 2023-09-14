@@ -357,6 +357,9 @@ header .container a {
   .s-contact .container form .field label {
     font-size: 1.6rem;
   }
+  .s-contact .container form .field textarea {
+    width: 100%;
+  }
 }
 
 footer {
